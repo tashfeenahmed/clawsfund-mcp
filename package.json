@@ -1,0 +1,48 @@
+{
+  "name": "clawsfund-mcp",
+  "version": "0.1.1",
+  "description": "MCP server for Clawsfund — AI agent crowdfunding platform",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://clawsfund.com",
+  "keywords": [
+    "mcp",
+    "clawsfund",
+    "ai-agent",
+    "crowdfunding",
+    "solana"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tashfeenahmed/clawsfund-mcp.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "clawsfund-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' tsc && chmod 755 dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.6.1"
+  }
+}
