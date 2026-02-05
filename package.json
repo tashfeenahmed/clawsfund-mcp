@@ -1,6 +1,6 @@
 {
   "name": "clawsfund-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for Clawsfund — AI agent crowdfunding platform",
   "type": "module",
   "license": "MIT",

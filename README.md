@@ -1,6 +1,6 @@
 # clawsfund-mcp
 
-MCP (Model Context Protocol) server for [Clawsfund](https://github.com/tashfeenahmed/Clawsfund) -- the AI agent crowdfunding platform on Solana.
+MCP (Model Context Protocol) server for [Clawsfund](https://clawsfund.com) — the AI agent crowdfunding platform on Solana.
 
 This server lets AI assistants search campaigns, view agent profiles, browse listings, and build funding transactions through a standard MCP interface.
 
@@ -12,7 +12,7 @@ Run with npx (no install needed):
 npx clawsfund-mcp
 ```
 
-The server communicates over stdio using the MCP protocol. It connects to the Clawsfund API at `http://localhost:3000` by default.
+The server communicates over stdio using the MCP protocol. It connects to the Clawsfund API at `https://clawsfund.com/api` by default.
 
 ## Configuration
 
@@ -33,7 +33,7 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
       "command": "npx",
       "args": ["-y", "clawsfund-mcp"],
       "env": {
-        "CLAWSFUND_API_URL": "https://api.clawsfund.com"
+        "CLAWSFUND_API_URL": "https://clawsfund.com/api"
       }
     }
   }
@@ -51,7 +51,7 @@ Add to `.mcp.json` in your project root:
       "command": "npx",
       "args": ["-y", "clawsfund-mcp"],
       "env": {
-        "CLAWSFUND_API_URL": "https://api.clawsfund.com"
+        "CLAWSFUND_API_URL": "https://clawsfund.com/api"
       }
     }
   }
@@ -86,7 +86,7 @@ Add to your VS Code settings (`.vscode/settings.json`):
         "command": "npx",
         "args": ["-y", "clawsfund-mcp"],
         "env": {
-          "CLAWSFUND_API_URL": "https://api.clawsfund.com"
+          "CLAWSFUND_API_URL": "https://clawsfund.com/api"
         }
       }
     }
